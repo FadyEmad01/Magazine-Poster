@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #F8F4EC;
+  --sec-color: #FF9BD2;
+  --third-color: #D63484;
+  --four-color: #402B3A;
+  --main-font: 'Playfair Display', serif;
+  --h1-size: 80px;
+  --h1sect1-size: 60px;
+  --p-size: 20px;
+  --h2-size: 60px;
+  --card-color: #fff4fa;
+  --card-font: 37px;
+}
+
+body {
+  background-color: var(--main-color);
+}
+
+.contanerNav {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  flex-wrap: inherit;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contaner {
+  width: 85%;
+  margin: auto;
+}
+
+.MyBtn {
+
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin-top: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--four-color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 100px;
+  font-weight: 500;
+  color: var(--four-color);
+  background-color: var(--main-color);
+}
+
+.MyBtn:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--four-color);
+  height: 150px;
+  width: 200px;
+  border-radius: 0px;
+}
+
+.MyBtn:hover {
+  color: #fff;
+}
+
+.MyBtn:before {
+  top: 100%;
+  left: 0%;
+  transition: all .4s;
+}
+
+.MyBtn:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+/* .MyBtn:active:before {
+  background: #3a0ca3;
+  transition: background 0s;
+ } */
+
+.sec1Img img {
+  width: 100%;
+}
+
+.sec1Text h1 {
+  font-family: var(--main-font);
+  font-size: var(--h1-size);
+}
+
+.sec1Text p {
+  font-size: var(--p-size);
+
+}
+
+.MyBtn1 {
+
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 3.5em;
+  line-height: 2.5em;
+  margin-top: 8px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--four-color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 100px;
+  font-weight: 500;
+  color: var(--four-color);
+  background-color: var(--main-color);
+}
+
+.MyBtn1:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--four-color);
+  height: 150px;
+  width: 200px;
+  border-radius: 0px;
+}
+
+.MyBtn1:hover {
+  color: #fff;
+}
+
+.MyBtn1:before {
+  top: 100%;
+  left: 0%;
+  transition: all .4s;
+}
+
+.MyBtn1:hover:before {
+  top: -30px;
+  left: -30px;
+}
+
+.section2 {
+  background-color: var(--four-color);
+}
+
+.section2 h1 {
+  color: var(--main-color);
+  font-size: var(--h1sect1-size);
+  font-family: var(--main-font);
+}
+
+.card {
+  padding: 0;
+  width: 30%;
+  background-color: var(--card-color);
+}
+
+.card img {
+  padding: 16px;
+  border-radius: 30px;
+}
+
+.card-title {
+  font-family: var(--main-font);
+  font-size: var(--card-font);
+}
+
+.custom-tooltip {
+  --bs-tooltip-bg: var(--third-color);
+  --bs-tooltip-color: var(--main-color);
+}
+
+.last-h1 {
+  color: var(--sec-color);
+}
+
+.last-h2 {
+  font-size: var(--h2-size);
+  font-family: var(--main-font);
+}
+
+.color-span1 {
+  background-image: linear-gradient(to right, #48160e, #5d2e23, #724638, #875f50, #9c7869, #a78678, #b19588, #bca498, #bfaaa1, #c1b1a9, #c3b7b2, #c5bebb);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-span2 {
+  background-image: linear-gradient(to right, #161616, #2a2130, #472944, #6c2d50, #922f52, #a73c50, #b94d4d, #c85f49, #cd7852, #d18f61, #d5a574, #d9ba8b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.color-span3 {
+  background-image: linear-gradient(to right, #a2c50a, #9fb820, #9bab2c, #969e35, #8f923d, #939043, #978f49, #9a8d4f, #ab9557, #bc9d60, #cea469, #dfac74);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (max-width: 1100px) {
+  :root {
+    --h1-size: 70px;
+    --h2-size: 50px;
+  }
+
+  .card {
+    width: 23rem;
+  }
+
+}
+
+@media screen and (max-width: 990px) {
+  :root {
+    --h1-size: 60px;
+    --h2-size: 40px;
+  }
+
+  .card {
+    width: 23rem;
+  }
+  .cardPadd{
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+@media screen and (max-width: 832px) {
+  :root {
+    --h1-size: 55px;
+    --h2-size: 35px;
+    --p-size: 16px
+  }
+  .cardPadd{
+    margin-left: 0rem;
+    margin-right: 0rem;
+  }
+  .card {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  :root {
+    --h1sect1-size: 40px;
+    --h1-size: 40px;
+    --h2-size: 35px;
+    --p-size: 16px
+  }
+
+  .card {
+    width: 23rem;
+  }
+}
